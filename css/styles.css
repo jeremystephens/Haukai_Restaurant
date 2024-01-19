@@ -81,7 +81,16 @@ nav img {
 }
 
 .text-box h1 {
-    font-size: 100px;
+    font-size: calc(100px * 0.5);
+    line-height: 1;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+text-box h2 {
+    font-size: 42px;
+    margin-top: 0;
 }
 
 .text-box p {
