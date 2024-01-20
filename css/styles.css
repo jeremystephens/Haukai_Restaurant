@@ -67,9 +67,10 @@ nav img {
 }
 
 .main-content {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(31, 31, 35, 0.7)), url(../images/kawakawa_image_1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(31, 31, 35, 0.7)), url(https://jeremystephens.github.io/Haukai_Restaurant/images/kawakawa_image_1.jpg);
     background-position: center;
     background-size: cover;
+    min-height: 100vh;
 }
 
 /* Hero Section */
