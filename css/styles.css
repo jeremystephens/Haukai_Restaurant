@@ -11,7 +11,7 @@
 
 /* Header */
 .header {
-    min-height: 100vh;
+    min-height: 10vh;
     width: 100%;
 }
 
@@ -65,7 +65,6 @@ nav img {
     display: none; 
     color: #fff; 
 }
-
 
 .main-content {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(31, 31, 35, 0.7)), url(../images/kawakawa_image_1.jpg);
