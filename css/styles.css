@@ -158,11 +158,6 @@ nav img {
     color: #fff;
 }
 
-.footer-column-1, .footer-column-2 {
-    flex: 0 0 33.333333%;
-    padding: 20px 0;
-}
-
 .footer-column-1 {
     text-align: left;
 }   
