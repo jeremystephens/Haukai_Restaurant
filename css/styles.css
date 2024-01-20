@@ -135,7 +135,7 @@ nav img {
 .footer {
     border-top: #1b1b1b solid 3px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #1F2434ff;
     color: #fff;
     text-align: center;
