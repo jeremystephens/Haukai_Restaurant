@@ -1,8 +1,16 @@
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('https://github.com/jeremystephens/Haukai_Restaurant/NunitoSans_10pt-Regular.ttf') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
 /* Global Styles */
 * {
     margin: 0;
     padding: 0;
     font-family: 'Nunito Sans', sans-serif;
+    font-display: swap;
 }
 
 /* Header */
