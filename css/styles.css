@@ -11,7 +11,7 @@
 
 /* Header */
 .header {
-    min-height: 10vh;
+    height: auto;
     width: 100%;
 }
 
