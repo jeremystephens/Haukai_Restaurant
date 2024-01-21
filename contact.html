@@ -3,9 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Haukai</title>
+    <title>Contact - Haukai Restaurant</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Removed callback=initMap since it's now in main.js -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZnGLDJnuKEsSFSvozcignoggKm-TolL0&callback=initMap" async defer></script>
+
 </head>
 <body>
+    <!-- Header -->
+    <header class="header">
+        <nav>
+            <a href="index.html" class="logo">Haukai.</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark"></i>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/menu.html">Menu</a></li>
+                    <li><a href="/reservations.html">Reservations</a></li>
+                    <li><a href="/hours.html">Hours</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars"></i>
+        </nav>
+    </header>  
 
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="contact-container">
+            <div class="contact-details">
+                <h2>Contact</h2>
+                <hr>
+                <p>If you'd like to learn more about Haukai, or for information about reservations, private events and general enquiries, please email us on info@haukai.co.nz.</p>
+            </div>
+            <div class="opening-hours">
+                <h2>Opening Hours</h2>
+                <hr>
+                <p>Wednesday, Thursday & Friday<br>5:00pm till late</p>
+            </div>
+            <div class="location">
+                <h2>Location</h2>
+                <hr>
+                <p>40 Wallace Street<br>Mount Cook<br>Wellington 6021</p>
+                <div id="map" style="height:400px; width:100%;"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-column footer-column-1">
+            <h3>Newsletter</h3>
+            <form name='submit-to-google-sheet'>
+                <input type="email" name="email" placeholder="Enter Email Address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+        <div class="footer-column footer-column-2">
+            <h3>Haukai</h3>
+            <p>123 Island Street, Kerikeri, Bay of Islands</p>
+            <p>Wednesday to Sunday</p>
+            <p>5pm to late</p>
+                <a href="https://www.facebook.com/yourprofile" aria-label="Visit our Facebook page">
+                <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/yourprofile" aria-label="Visit our Instagram page">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Ensure your main.js script is loaded after the Google Maps API -->
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/fbfb71d22a.js" crossorigin="anonymous"></script>
 </body>
 </html>

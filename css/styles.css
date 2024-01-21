@@ -6,6 +6,7 @@
 
 /* Global Styles */
 * {
+    color: #fff;
     margin: 0;
     padding: 0;
     font-family: 'Nunito Sans', sans-serif;
@@ -97,6 +98,33 @@ nav img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(31, 31, 35, 0.7)), url(../images/kawakawa_image_1.jpg);
     background-position: center;
     background-size: cover;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: flex-start; /* Align children to the start of the main axis */
+    padding: 20px;
+    margin-top: 100px; /* Distance from the header */
+    width: 100%; /* Take the full width */
+}
+
+/* Since we are stacking items vertically, we do not need to set flex: 1 */
+.contact-details,
+.opening-hours,
+.location {
+    width: 100%; /* Take the full width */
+    /* If you want to limit the width, you can use max-width */
+    max-width: 600px; /* Or any other value as per your design */
+    margin-bottom: 20px; /* Add some space between the elements */
+}
+
+#map {
+    height: 400px;
+    width: 100%; /* Full width of its parent */
+    max-width: 100%; /* Limiting the map's width to match the other content */
+    margin: 50px auto; /* This will center the map within the location div */
 }
 
 .text-box {
@@ -191,6 +219,7 @@ form input {
     border: 1px solid #1b1b1b;
     border-radius: 5px;
     text-align: left;
+    color: #1b1b1b;
 }
 
 form input::placeholder {
@@ -215,7 +244,7 @@ form button:hover {
 }
 
 span {
-    color: #5DBD51ff;
+    color: #68926Bff;
     margin-left: 10px;
 }
 

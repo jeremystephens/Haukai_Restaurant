@@ -1,3 +1,17 @@
+// Function to initialize the Google Map
+function initMap() {
+    var location = { lat: -34.397, lng: 150.644 }; // Replace with your actual location coordinates
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 8,
+        center: location
+    });
+    var marker = new google.maps.Marker({
+        position: location,
+        map: map
+    });
+}
+
+// Event listener for DOM content loaded
 document.addEventListener("DOMContentLoaded", function() {
     // Initialize and configure navigation menu interactions
     const navLinks = document.getElementById("navLinks");
@@ -14,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
         navLinks.style.right = "-200px";
     });
 
+    // Code for the Google Sheets form submission
     const form = document.forms['submit-to-google-sheet'];
     if (form) {
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwuVSjq3ATHs7DzkImrphE3DvB2tgkCHpE2Tx4rlbe6Kv1I2Kdhv_3WPXusnOGxsvB-/exec';
