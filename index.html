@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haukai Restaurant</title>
-    <!--<link rel="stylesheet" href="https://jeremystephens.github.io/Haukai_Restaurant/css/styles.css">-->
     <link rel="stylesheet" href="css/styles.css">
     
 </head>
@@ -39,10 +38,11 @@
     <footer class="footer">
         <div class="footer-column footer-column-1">
             <h3>Newsletter</h3>
-            <form>
-                <input type="email" placeholder="Enter Email Address" required>
-                <button type="submit">Subscribe</button>   
+            <form name='submit-to-google-sheet'>
+                <input type="email" name="email" placeholder="Enter Email Address" required>
+                <button type="submit">Subscribe</button>
             </form>
+            <span id="msg"></span>
         </div>
         <div class="footer-column footer-column-2">
             <h3>Haukai</h3>
