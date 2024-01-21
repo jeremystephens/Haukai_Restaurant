@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'Nunito Sans';
     src: url('font/NunitoSans_10pt-Regular.ttf') format('woff2');
-    font-weight: 400;
     font-display: swap;
 }
 
@@ -23,6 +22,18 @@
     width: 100%;
 }
 
+.logo {
+    font-size: 20px; /* Or any size you prefer */
+    font-weight: 100;   
+    color: #fff;    
+    text-decoration: none;  
+    letter-spacing: 4px;    
+    
+    display: inline-block;  
+    position: relative; 
+    z-index: 999;
+}
+
 /* Navigation Bar */
 nav {
     display: flex;
@@ -33,7 +44,9 @@ nav {
 }
 
 nav img {
-    width: 150px;
+    max-width: 100%;
+    height: auto;
+
 }
 
 .nav-links {
@@ -84,7 +97,6 @@ nav img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(31, 31, 35, 0.7)), url(../images/kawakawa_image_1.jpg);
     background-position: center;
     background-size: cover;
-    
 }
 
 .text-box {
@@ -98,29 +110,23 @@ nav img {
 }
 
 .text-box h1 {
+    letter-spacing: 4px;
     font-size: 148px;
     font-weight: 300;
-    margin: 0;
-    display: block;
-    white-space: nowrap;
-    line-height: 1;
 }
 
 .text-box h2 {
     font-weight: 250;
     font-size: calc(150px * 0.5);
-    display: block;
-    margin: 0;
-    white-space: nowrap;
-    line-height: 1;
-    letter-spacing: 8px;;
+    letter-spacing: 10px;;
 }
 
 .text-box p {
-    margin: 10px 0 40px;
-    font-size: 28px;
+    margin: 10px 70px 40px;
+    text-align:justify;
+    text-align-last: center;
+    font-size: 14px;
     color: #fff;
-    font-weight: 200;
 }
 
 .hero-button {
@@ -262,31 +268,17 @@ form button:hover {
         margin: 10px;
     }
 
-
     .text-box h1 {
-        font-size: 104px;
-        font-weight: 300;
-        margin: 0;
-        display: block;
-        white-space: nowrap;
-        line-height: 1;
+        font-size: 108px;
+
     }
     
     .text-box h2 {
-        font-weight: 250;
-        font-size: calc(96px * 0.5);
-        display: block;
-        margin: 0;
-        white-space: nowrap;
-        line-height: 1;
-        letter-spacing: 8px;;
+        font-size: calc(104px * 0.5);
     }
     
     .text-box p {
-        margin: 10px 0 40px;
-        font-size: 20px;
-        color: #fff;
-        font-weight: 200;
+        font-size: 1px;
     }
 
     .hero-button {
@@ -306,6 +298,5 @@ form button:hover {
         margin: 0 auto;
         padding: 15px;
         box-sizing: border-box;
-
     }
 }
