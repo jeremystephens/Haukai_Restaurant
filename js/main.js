@@ -1,11 +1,11 @@
-// Function to initialize the Google Map
+// Initializes the Google Map
 function initMap() {
-
     var location = { lat: -35.21799936266406, lng: 173.96239149713313 };
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 13,
         center: location,
         disableDefaultUI: true,
+        // Map style settings
         styles: [
             {
                 "featureType": "administrative",
@@ -213,14 +213,17 @@ function initMap() {
             }
         ]
     });
+
+    // Placing a marker on the map
     var marker = new google.maps.Marker({
         position: location,
         map: map
     });
 }
 
+// Listener for DOMContentLoaded event
 document.addEventListener("DOMContentLoaded", function() {
-    // Dynamic header behavior
+    // Dynamic behavior for the header on scroll
     let lastScrollTop = 0;
     const header = document.querySelector('.header');
 
@@ -235,7 +238,7 @@ document.addEventListener("DOMContentLoaded", function() {
         lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
     });
 
-    // Navigation menu interactions
+    // Handling navigation menu interactions
     const navLinks = document.getElementById("navLinks");
     const showMenuButton = document.querySelector('.fa-bars');
     const hideMenuButton = document.querySelector('.fa-xmark');
@@ -248,7 +251,7 @@ document.addEventListener("DOMContentLoaded", function() {
         navLinks.style.right = "-200px";
     });
 
-    // Google Sheets form submission
+    // Handling Google Sheets form submission
     const form = document.forms['submit-to-google-sheet'];
     if (form) {
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwuVSjq3ATHs7DzkImrphE3DvB2tgkCHpE2Tx4rlbe6Kv1I2Kdhv_3WPXusnOGxsvB-/exec';
@@ -259,23 +262,24 @@ document.addEventListener("DOMContentLoaded", function() {
             msg.innerHTML = "Submitting...";
 
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(response => {
-                if (response.ok) {
-                    msg.innerHTML = "tēnā rawa atu koe (thank you very much)";
+                .then(response => {
+                    if (response.ok) {
+                        msg.innerHTML = "tēnā rawa atu koe (thank you very much)";
+                        setTimeout(() => { msg.innerHTML = ''; }, 5000);
+                        form.reset();
+                    } else {
+                        throw new Error('Network response was not ok.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    msg.innerHTML = "Error: Submission failed.";
                     setTimeout(() => { msg.innerHTML = ''; }, 5000);
-                    form.reset();
-                } else {
-                    throw new Error('Network response was not ok.');
-                }
-            })
-            .catch(error => {
-                console.error('Error!', error.message);
-                msg.innerHTML = "Error: Submission failed.";
-                setTimeout(() => { msg.innerHTML = ''; }, 5000);
-            });
+                });
         });
     }
 
+    // Carousel functionality for the image gallery
     let currentIndex = 0;
     const images = document.querySelectorAll('.carousel-image');
     const totalImages = images.length;
@@ -303,7 +307,6 @@ document.addEventListener("DOMContentLoaded", function() {
         prevButton.addEventListener('click', prevImage);
     }
 
-    // Initialize carousel with first image
+    // Initialize carousel with the first image
     showImage(currentIndex);
-
 });
