@@ -88,7 +88,7 @@ nav img {
 }
 
 /* Hero Section */
-.main-content {
+.main-content-index {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,6 +98,83 @@ nav img {
     background-position: center;
     background-size: cover;
 }
+
+
+.main-content-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(31, 31, 35, 0.55)), url(../images/fresh_vegetables_2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel {
+    position: relative;
+    max-width: 1000px; /* Adjust as needed */
+    margin: auto;
+    overflow: hidden;
+    border: 1px solid #fff;
+}
+
+.carousel-images {
+    display: flex;
+}
+
+.carousel-image {
+    max-width: 100%;
+    display: none;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #1F2434ff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 100;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-button i {
+    font-size: 60px; /* Adjust size as needed */
+    color: white; /* Adjust color as needed */
+    text-shadow: 
+        -1px -1px 0 #1F2434ff,  
+        1px -1px 0 #1F2434ff,
+        -1px  1px 0 #1F2434ff,
+        1px  1px 0 #1F2434ff; /* Simulates a black border */
+}
+
+
+.main-content-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0)), url(../images/hole_in_the_rock.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
 
 .phone-number {
     text-decoration: none;

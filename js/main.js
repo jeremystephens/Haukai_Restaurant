@@ -275,4 +275,35 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
     }
+
+    let currentIndex = 0;
+    const images = document.querySelectorAll('.carousel-image');
+    const totalImages = images.length;
+
+    function showImage(index) {
+        images.forEach(image => image.style.display = 'none');
+        images[index].style.display = 'block';
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % totalImages;
+        showImage(currentIndex);
+    }
+
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+        showImage(currentIndex);
+    }
+
+    const nextButton = document.querySelector('.carousel-button.next');
+    const prevButton = document.querySelector('.carousel-button.prev');
+
+    if (nextButton && prevButton) {
+        nextButton.addEventListener('click', nextImage);
+        prevButton.addEventListener('click', prevImage);
+    }
+
+    // Initialize carousel with first image
+    showImage(currentIndex);
+
 });
