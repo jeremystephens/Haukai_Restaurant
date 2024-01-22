@@ -99,6 +99,10 @@ nav img {
     background-size: cover;
 }
 
+.phone-number {
+    text-decoration: none;
+}
+
 /* Contact Section */
 .contact-container {
     display: flex;
