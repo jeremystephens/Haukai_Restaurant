@@ -88,27 +88,26 @@ nav img {
 }
 
 /* Hero Section */
-.main-content-index {
+.main-content {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(31, 31, 35, 0.7)), url(../images/kawakawa_image_1.jpg);
     background-position: center;
     background-size: cover;
 }
 
+.main-content-index {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(31, 31, 35, 0.7)), url(../images/kawakawa_image_1.jpg);
+}
 
 .main-content-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(31, 31, 35, 0.55)), url(../images/fresh_vegetables_2.jpg);
-    background-position: center;
-    background-size: cover;
+}
+
+.main-content-contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0)), url(../images/hole_in_the_rock.jpg);
 }
 
 .carousel {
@@ -116,7 +115,6 @@ nav img {
     max-width: 1000px; /* Adjust as needed */
     margin: auto;
     overflow: hidden;
-    border: 1px solid #fff;
 }
 
 .carousel-images {
@@ -153,7 +151,7 @@ nav img {
 }
 
 .carousel-button i {
-    font-size: 60px; /* Adjust size as needed */
+    font-size: 45px; /* Adjust size as needed */
     color: white; /* Adjust color as needed */
     text-shadow: 
         -1px -1px 0 #1F2434ff,  
@@ -163,25 +161,13 @@ nav img {
 }
 
 
-.main-content-contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0)), url(../images/hole_in_the_rock.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-
 
 .phone-number {
     text-decoration: none;
 }
 
 /* Contact Section */
-.contact-container {
+.contact-container, .menu-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -193,14 +179,16 @@ nav img {
 
 .contact-details,
 .opening-hours,
-.location {
+.location, 
+.gallery,
+.restaurant-menu {
     width: 100%;
     max-width: 600px;
     margin-bottom: 20px;
 }
 
 /* Map */
-#map {
+#map, .pdf-container {
     height: 400px;
     width: 100%;
     max-width: 100%;
@@ -218,7 +206,7 @@ nav img {
     text-align: center;
 }
 
-.contact-container h2 {
+.main-content h2 {
     font-size: 30px;
     font-weight: 100;
     letter-spacing: 4px;
