@@ -309,4 +309,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Initialize carousel with the first image
     showImage(currentIndex);
+
+    // Time Restriction for Booking Form
+    var timeInput = document.getElementById('time');
+    if (timeInput) {
+        // Set the valid time range
+        timeInput.min = "17:00"; // 5:00 PM
+        timeInput.max = "23:00"; // 11:00 PM
+
+        timeInput.addEventListener('change', function () {
+            var time = this.value;
+            var hour = parseInt(time.split(':')[0]);
+
+            // Adjust the time automatically if it's outside the valid range
+            if (hour < 17) {
+                this.value = "17:00"; // Set to 5:00 PM
+            } else if (hour > 23) {
+                this.value = "23:00"; // Set to 11:00 PM
+            }
+        });
+    }
+    
 });

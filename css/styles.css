@@ -107,7 +107,11 @@ nav img {
 }
 
 .main-content-contact {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0)), url(../images/hole_in_the_rock.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../images/hole_in_the_rock.jpg);
+}
+
+.main-content-reservations {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../images/crayfish.jpg);
 }
 
 .carousel {
@@ -166,14 +170,12 @@ nav img {
         1px  1px 0 #1F2434ff; /* Simulates a black border */
 }
 
-
-
 .phone-number {
     text-decoration: none;
 }
 
 /* Contact Section */
-.contact-container, .menu-container {
+.contact-container, .menu-container, .booking-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -187,7 +189,8 @@ nav img {
 .opening-hours,
 .location, 
 .gallery,
-.restaurant-menu {
+.restaurant-menu,
+.booking-form {
     width: 100%;
     max-width: 600px;
     margin-bottom: 20px;
@@ -211,6 +214,7 @@ nav img {
     font-size: 30px;
     font-weight: 100;
     letter-spacing: 4px;
+    text-align: left;
 }
 
 .text-box, h1 {
@@ -323,6 +327,73 @@ span {
     color: #68926Bff;
     margin-left: 10px;
 }
+
+
+
+.booking-form label {
+    display: flex;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.booking-form input[type="text"],
+.booking-form input[type="email"],
+.booking-form input[type="number"],
+.booking-form input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.booking-form button.submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #1F2434ff;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.booking-form button.submit-button:hover {
+    background-color: #4cae4c; 
+}
+
+
+
+
+
+
+
+
+/* TO DO
+
+BUILD HOURS PAGE
+
+Centre the Make a Reservation Text
+make booking form look like rest of websites style
+format menu page a bit better
+format contact page a bit better
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Media Queries */
 @media(max-width: 700px) {

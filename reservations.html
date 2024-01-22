@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservations - Haukai Restaurant</title>
+    <title>Booking - Haukai Restaurant</title>
     <link rel="stylesheet" href="css/styles.css">
-    
+    <!-- Include a library for the calendar, like jQuery UI -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
+    <!-- Header Section -->
     <header class="header">
         <nav>
+            <!-- Logo -->
             <a href="index.html" class="logo">Haukai.</a>
+            <!-- Navigation Menu -->
             <div class="nav-links" id="navLinks">
                 <i class="fa-solid fa-xmark"></i>
                 <ul>
@@ -23,15 +29,37 @@
             </div>
             <i class="fa-solid fa-bars"></i>
         </nav>
+    </header>  
 
-    </header>
+    <!-- Main Content -->
+    <main class="main-content main-content-reservations">
+        <div class="booking-container">
+            <h2>Make a Reservation</h2>
+            <form action="/submit-booking" method="post" class="booking-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-    <main class="main-content">
- 
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+
+                <label for="date">Date:</label>
+                <input type="text" id="date" name="date" required>
+
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit" class="submit-button">Book Now</button>
+            </form>
+        </div>
     </main>
 
+    <!-- Footer Section -->
     <footer class="footer">
         <div class="footer-column footer-column-1">
+            <!-- Newsletter Subscription Form -->
             <h3>Newsletter</h3>
             <form name='submit-to-google-sheet'>
                 <input type="email" name="email" placeholder="Enter Email Address" required>
@@ -40,20 +68,26 @@
             <span id="msg"></span>
         </div>
         <div class="footer-column footer-column-2">
+            <!-- Contact Information and Social Media Links -->
             <h3>Haukai</h3>
             <p>123 Island Street, Kerikeri, Bay of Islands</p>
             <p>Wednesday to Sunday</p>
             <p>5:00pm till late</p>
-                <a href="https://www.facebook.com/yourprofile" aria-label="Visit our Facebook page">
+            <a href="https://www.facebook.com/Haukai-BOI" aria-label="Visit our Facebook page">
                 <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
-                </a>
-                <a href="https://www.instagram.com/yourprofile" aria-label="Visit our Instagram page">
+            </a>
+            <a href="https://www.instagram.com/Haukai-BOI" aria-label="Visit our Instagram page">
                 <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-                </a>
+            </a>
         </div>
     </footer>
 
+    <script>
+        // jQuery for calendar
+        $(function() {
+            $("#date").datepicker();
+        });
+    </script>
     <script src="js/main.js"></script>
-    <script src="https://kit.fontawesome.com/fbfb71d22a.js" crossorigin="anonymous"></script>
 </body>
 </html>
