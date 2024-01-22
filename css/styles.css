@@ -111,10 +111,16 @@ nav img {
 }
 
 .carousel {
-    position: relative;
-    max-width: 1000px; /* Adjust as needed */
-    margin: auto;
+    position: relative;    
     overflow: hidden;
+}
+
+#map, #menu-pdf, .carousel {
+    height: 400px;
+    width: 100%;
+    max-width: 100%;
+    margin: 50px auto;
+    margin-top: 10px;
 }
 
 .carousel-images {
@@ -188,12 +194,7 @@ nav img {
 }
 
 /* Map */
-#map, .pdf-container {
-    height: 400px;
-    width: 100%;
-    max-width: 100%;
-    margin: 50px auto;
-}
+
 
 .text-box {
     margin-top: 160px;

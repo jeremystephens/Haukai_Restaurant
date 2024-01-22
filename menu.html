@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Haukai Restaurant</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZnGLDJnuKEsSFSvozcignoggKm-TolL0&callback=initMap" async defer></script>
 
+    <!-- Page Title -->
+    <title>Contact - Haukai Restaurant</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Google Maps API Script -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header Section -->
     <header class="header">
         <nav>
+            <!-- Logo -->
             <a href="index.html" class="logo">Haukai.</a>
+            <!-- Navigation Menu -->
             <div class="nav-links" id="navLinks">
                 <i class="fa-solid fa-xmark"></i>
                 <ul>
@@ -27,19 +35,28 @@
         </nav>
     </header>  
 
-    <!-- Main Content -->
+    <!-- Main Content Section -->
     <main class="main-content main-content-menu">
+        <!-- Menu and Gallery Container -->
         <div class="menu-container">
+            <!-- Restaurant Menu Section -->
             <div class="restaurant-menu">
                 <h2>Menu</h2>
                 <hr>
-    
+                <!-- PDF Menu Embed -->
+                <div class="pdf-container">
+                    <iframe id="menu-pdf" src="/menu/Haukai_menu_2024_january.pdf#page=2" frameborder="0"></iframe>
+                </div>
             </div>
+
+            <!-- Image Gallery Section -->
             <div class="gallery">
                 <h2>Gallery</h2>
                 <hr>
+                <!-- Carousel for Images -->
                 <div class="carousel">
                     <div class="carousel-images">
+                        <!-- Carousel Images -->
                         <img src="images/flat_bread.jpg" alt="Flatbread on a plate" class="carousel-image">
                         <img src="images/charcoal_bbq.jpg" alt="Empty BBQ grill over charcoal, flames bursting above grill" class="carousel-image">
                         <img src="images/crayfish.jpg" alt="BBQ Grilled Spiny Crayfish sliced on a cutting board" class="carousel-image">
@@ -48,6 +65,7 @@
                         <img src="images/salad_toss.jpg" alt="Closeup shot of salad being tossed with wooden ladles" class="carousel-image">
                         <img src="images/steak_bbq.jpg" alt="Skewers of venison steak grilling over a grill" class="carousel-image">
                     </div>
+                    <!-- Carousel Navigation Buttons -->
                     <button class="carousel-button prev"><i class="fa-solid fa-arrow-left"></i></button>
                     <button class="carousel-button next"><i class="fa-solid fa-arrow-right"></i></button>
                 </div>
@@ -55,9 +73,10 @@
         </div>
     </main>
 
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer class="footer">
         <div class="footer-column footer-column-1">
+            <!-- Newsletter Subscription Form -->
             <h3>Newsletter</h3>
             <form name='submit-to-google-sheet'>
                 <input type="email" name="email" placeholder="Enter Email Address" required>
@@ -66,20 +85,21 @@
             <span id="msg"></span>
         </div>
         <div class="footer-column footer-column-2">
+            <!-- Contact Information and Social Media Links -->
             <h3>Haukai</h3>
             <p>123 Island Street, Kerikeri, Bay of Islands</p>
             <p>Wednesday to Sunday</p>
             <p>5:00pm till late</p>
-                <a href="https://www.facebook.com/yourprofile" aria-label="Visit our Facebook page">
+            <a href="https://www.facebook.com/yourprofile" aria-label="Visit our Facebook page">
                 <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
-                </a>
-                <a href="https://www.instagram.com/yourprofile" aria-label="Visit our Instagram page">
+            </a>
+            <a href="https://www.instagram.com/yourprofile" aria-label="Visit our Instagram page">
                 <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-                </a>
+            </a>
         </div>
     </footer>
 
-    <!-- Scripts -->
+    <!-- External JavaScript Files -->
     <script src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/fbfb71d22a.js" crossorigin="anonymous"></script>
 </body>
