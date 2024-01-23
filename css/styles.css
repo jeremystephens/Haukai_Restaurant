@@ -6,10 +6,10 @@
 
 /* Global Styles */
 * {
-    color: #fff;
     margin: 0;
     padding: 0;
     font-family: 'Nunito Sans', sans-serif;
+    color: #fff;
     font-display: swap;
 }
 
@@ -17,36 +17,31 @@
 .header {
     position: fixed;
     top: 0;
-    background-color: transparent;
-    z-index: 999;
-    height: auto;
     width: 100%;
+    height: auto;
+    background-color: transparent;
     transition: 0.3s;
+    z-index: 999;
 }
 
 .logo {
-    font-size: 40px;     font-weight: 100;   
-    color: #fff;    
-    text-decoration: none;  
-    letter-spacing: 4px;    
-    display: inline-block;  
-    position: relative; 
+    display: inline-block;
+    position: relative;
+    font-size: 40px;
+    font-weight: 100;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 4px;
     z-index: 999;
 }
 
 /* Navigation Bar */
 nav {
     display: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding: 2% 6%;
     z-index: 1000;
-}
-
-nav img {
-    max-width: 100%;
-    height: auto;
-
 }
 
 .nav-links {
@@ -55,24 +50,24 @@ nav img {
 }
 
 .nav-links ul li {
-    list-style: none;
     display: inline-block;
-    padding: 8px 12px;
     position: relative;
+    padding: 8px 12px;
+    list-style: none;
 }
 
 .nav-links ul li a {
+    font-size: 16px;
     color: #fff;
     text-decoration: none;
-    font-size: 16px;
 }
 
 .nav-links ul li::after {
     content: '';
-    width: 0%;
-    height: 1px;
-    background: #fff;
     display: block;
+    height: 1px;
+    width: 0%;
+    background: #fff;
     margin: auto;
     transition: 0.5s;
 }
@@ -83,8 +78,8 @@ nav img {
 
 .fa-solid.fa-xmark, 
 .fa-solid.fa-bars {
-    display: none; 
-    color: #fff; 
+    display: none;
+    color: #fff;
 }
 
 /* Hero Section */
@@ -94,28 +89,29 @@ nav img {
     justify-content: center;
     min-height: 100vh;
     width: 100%;
-    background-position: center;
     background-size: cover;
+    background-position: center;
 }
 
 .main-content-index {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(31, 31, 35, 0.7)), url(../images/kawakawa_image_1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(31, 31, 35, 0.7)), url('../images/kawakawa_image_1.jpg');
 }
 
 .main-content-menu {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(31, 31, 35, 0.55)), url(../images/fresh_vegetables_2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(31, 31, 35, 0.55)), url('../images/fresh_vegetables_2.jpg');
 }
 
 .main-content-contact {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../images/hole_in_the_rock.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('../images/hole_in_the_rock.jpg');
 }
 
 .main-content-reservations {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../images/crayfish.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('../images/crayfish.jpg');
 }
 
+/* Carousel */
 .carousel {
-    position: relative;    
+    position: relative;
     overflow: hidden;
 }
 
@@ -123,8 +119,7 @@ nav img {
     height: 400px;
     width: 100%;
     max-width: 100%;
-    margin: 50px auto;
-    margin-top: 10px;
+    margin: 50px auto 10px;
 }
 
 .carousel-images {
@@ -132,24 +127,20 @@ nav img {
 }
 
 .carousel-image {
-    max-width: 100%;
     display: none;
+    max-width: 100%;
     transition: opacity 0.5s ease;
 }
 
 .carousel-button {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    background-color: #1F2434ff;
-    border: none;
-    cursor: pointer;
     padding: 10px;
-    z-index: 100;
-    background: none;
     border: none;
+    background: none;
     cursor: pointer;
-
+    transform: translateY(-50%);
+    z-index: 100;
 }
 
 .carousel-button.prev {
@@ -161,13 +152,9 @@ nav img {
 }
 
 .carousel-button i {
-    font-size: 45px; /* Adjust size as needed */
-    color: white; /* Adjust color as needed */
-    text-shadow: 
-        -1px -1px 0 #1F2434ff,  
-        1px -1px 0 #1F2434ff,
-        -1px  1px 0 #1F2434ff,
-        1px  1px 0 #1F2434ff; /* Simulates a black border */
+    font-size: 45px;
+    color: white;
+    text-shadow: -1px -1px 0 #1F2434ff, 1px -1px 0 #1F2434ff, -1px 1px 0 #1F2434ff, 1px 1px 0 #1F2434ff;
 }
 
 .phone-number {
@@ -191,23 +178,19 @@ nav img {
 .gallery,
 .restaurant-menu,
 .booking-form {
-    width: 100%;
     max-width: 600px;
+    width: 100%;
     margin-bottom: 20px;
 }
 
-/* Map */
-
-
+/* Text Box */
 .text-box {
-    margin-top: 160px;
+    padding: 15px;
     max-width: 600px;
     width: 100%;
-    padding: 15px;
     color: #fff;
-    top: 50%;
-    left: 50%;
     text-align: center;
+    margin-top: 160px;
 }
 
 .main-content h2 {
@@ -217,37 +200,37 @@ nav img {
     text-align: left;
 }
 
-.text-box, h1 {
-    letter-spacing: 4px;
+.text-box h1 {
     font-size: 148px;
     font-weight: 300;
+    letter-spacing: 4px;
 }
 
 .text-box h2 {
-    font-weight: 250;
     font-size: calc(150px * 0.5);
-    letter-spacing: 10px;;
+    font-weight: 250;
+    letter-spacing: 10px;
+    text-align: center;
 }
 
 .text-box p {
-    margin: 10px 70px 40px;
-    text-align:justify;
-    text-align-last: center;
     font-size: 14px;
-    color: #fff;
+    margin: 10px 70px 40px;
+    text-align: justify;
+    text-align-last: center;
 }
 
 .hero-button {
-    display: inline-block;
-    text-decoration: none;
-    color: #ffffff;
-    border: 1px solid #fff;
-    border-radius: 10px;
     padding: 12px 34px;
     font-size: 24px;
+    color: #ffffff;
     background: transparent;
-    position: relative;
+    border: 1px solid #fff;
+    border-radius: 10px;
     cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
 }
 
 .hero-button:hover {
@@ -258,13 +241,13 @@ nav img {
 
 /* Footer */
 .footer {
-    border-top: rgba(255, 255, 255, 0.4) solid 1px;
     display: flex;
     justify-content: space-between;
+    padding: 2% 6%;
     background-color: #1F2434ff;
     color: #fff;
     text-align: center;
-    padding: 2% 6%;
+    border-top: rgba(255, 255, 255, 0.4) solid 1px;
 }
 
 .footer div h3 {
@@ -293,13 +276,14 @@ nav img {
 
 /* Input and Button Styles */
 form input {
-    width: 240px;
     padding: 10px;
+    width: 240px;
     margin-bottom: 10px;
+    color: #1b1b1b;
+    background-color: transparent;
     border: 1px solid #1b1b1b;
     border-radius: 5px;
     text-align: left;
-    color: #1b1b1b;
 }
 
 form input::placeholder {
@@ -307,13 +291,13 @@ form input::placeholder {
 }
 
 form button {
-    width: 100px;
     padding: 10px;
+    width: 100px;
     margin-bottom: 10px;
+    color: #fff;
+    background-color: transparent;
     border: 1px solid #ffffff;
     border-radius: 5px;
-    background-color: transparent;
-    color: #fff;
     cursor: pointer;
 }
 
@@ -324,11 +308,9 @@ form button:hover {
 }
 
 span {
-    color: #68926Bff;
     margin-left: 10px;
+    color: #68926Bff;
 }
-
-
 
 .booking-form label {
     display: flex;
@@ -340,90 +322,59 @@ span {
 .booking-form input[type="email"],
 .booking-form input[type="number"],
 .booking-form input[type="time"] {
-    width: 100%;
     padding: 10px;
+    width: 100%;
     margin-bottom: 20px;
+    color: #1b1b1b;
+    background-color: transparent;
     border: 1px solid #ddd;
     border-radius: 4px;
 }
 
 .booking-form button.submit-button {
-    display: block;
-    width: 100%;
     padding: 10px;
-    background-color: #1F2434ff;
+    width: 100%;
     color: white;
+    background-color: #1F2434ff;
     border: 1px solid white;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    display: block;
 }
 
 .booking-form button.submit-button:hover {
     background-color: #4cae4c; 
 }
 
-
-
-
-
-
-
-
-/* TO DO
-
-BUILD HOURS PAGE
-
-Centre the Make a Reservation Text
-make booking form look like rest of websites style
-format menu page a bit better
-format contact page a bit better
-
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Media Queries */
 @media(max-width: 700px) {
-
     .header {
         background-color: #1F2434ff;
         border-bottom: rgba(255, 255, 255, 0.75) solid 1px;
     }
 
-    .nav-links ul li {
-        display: block;
-    }
-
     .nav-links {
         position: absolute;
+        right: -200px;
+        top: 0;
+        width: 200px;
+        height: 100vh;
         background-color: #1F2434ff;
         border-left: rgba(255, 255, 255, 0.75) solid 1px;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
         text-align: center;
-        z-index: 2;
         transition: 1s;
+        z-index: 2;
     }
 
     .nav-links ul {
-        width: 100%;
         display: block;
+        width: 100%;
         margin: 10px 0px;
+    }
+
+    .nav-links ul li {
+        display: block;
     }
 
     .nav-links ul li a {
@@ -437,40 +388,39 @@ format contact page a bit better
     .nav-links.active {
         right: 0px;
     }
-    .fa-solid.fa-xmark{
-        text-align: right;
+
+    .fa-solid.fa-xmark {
         display: block;
-        color: #fff;
-        cursor: pointer;
-        font-size: 24px;
         margin: 20px 40px;
-        
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: right;
     }
 
     .fa-solid.fa-bars {
         display: block;
-        color: #fff;
-        cursor: pointer;
-        font-size: 24px;
         margin: 10px;
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
     }
 
     .text-box h1 {
         font-size: 108px;
-
     }
-    
+
     .text-box h2 {
         font-size: calc(104px * 0.5);
     }
-    
+
     .text-box p {
         font-size: 16px;
     }
 
     .hero-button {
-        font-size: 20px;
         padding: 10px 20px;
+        font-size: 20px;
     }
 
     .contact-container {
@@ -479,20 +429,20 @@ format contact page a bit better
 
     .footer {
         flex-direction: column;
-        align-items: center;
         padding: 50px;
         padding-bottom: 50px;
+        align-items: center;
     }
-    
-    .footer-column-1, .footer-column-2 {
+
+    .footer-column-1,
+    .footer-column-2 {
+        padding: 15px;
         width: 100%;
         margin: 0 auto;
-        padding: 15px;
         box-sizing: border-box;
     }
 
     form input::placeholder {
         text-align: left;
     }
-    
 }
