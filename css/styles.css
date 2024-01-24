@@ -94,19 +94,19 @@ nav {
 }
 
 .main-content-index {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(31, 31, 35, 0.7)), url('../images/kawakawa_image_1.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/kawakawa_image_1.jpg');
 }
 
 .main-content-menu {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(31, 31, 35, 0.55)), url('../images/fresh_vegetables_2.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/fresh_vegetables_2.jpg');
 }
 
 .main-content-contact {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('../images/hole_in_the_rock.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/hole_in_the_rock.jpg');
 }
 
 .main-content-reservations {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('../images/crayfish.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/crayfish.jpg');
 }
 
 /* Carousel */
@@ -170,6 +170,7 @@ nav {
     padding: 20px;
     margin-top: 240px;
     width: 100%;
+    max-width: 1000px;
 }
 
 .contact-details,
@@ -177,7 +178,8 @@ nav {
 .location, 
 .gallery,
 .restaurant-menu,
-.booking-form {
+.booking-form,
+.booking-information {
     max-width: 600px;
     width: 100%;
     margin-bottom: 20px;
@@ -193,10 +195,14 @@ nav {
     margin-top: 160px;
 }
 
-.main-content h2 {
+.main-content h2,
+.booking-container h2{
     font-size: 30px;
     font-weight: 100;
     letter-spacing: 4px;
+    text-align: left;
+    letter-spacing: 10px;
+    margin-top: 30px;
     text-align: left;
 }
 
@@ -213,11 +219,19 @@ nav {
     text-align: center;
 }
 
-.text-box p {
+.text-box p{
     font-size: 14px;
     margin: 10px 70px 40px;
+}
+
+.text-box p {
     text-align: justify;
     text-align-last: center;
+}
+
+.booking-information p{
+    font-size: 14;
+    text-align: left;
 }
 
 .hero-button {
@@ -279,9 +293,9 @@ form input {
     padding: 10px;
     width: 240px;
     margin-bottom: 10px;
-    color: #1b1b1b;
+    color: #ffffff;
     background-color: transparent;
-    border: 1px solid #1b1b1b;
+    border: 1px solid #ffffff;
     border-radius: 5px;
     text-align: left;
 }
@@ -322,17 +336,16 @@ span {
 .booking-form input[type="email"],
 .booking-form input[type="number"],
 .booking-form input[type="time"] {
-    padding: 10px;
     width: 100%;
     margin-bottom: 20px;
-    color: #1b1b1b;
-    background-color: transparent;
+    color: #1F2434ff;
+    background-color: rgba(255, 255, 255, 0.4);
     border: 1px solid #ddd;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .booking-form button.submit-button {
-    padding: 10px;
     width: 100%;
     color: white;
     background-color: #1F2434ff;
