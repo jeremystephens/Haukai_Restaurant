@@ -6,6 +6,7 @@ function initMap() {
         center: location,
         disableDefaultUI: true,
         // Map style settings
+        // Taken from https://snazzymaps.com/
         styles: [
             {
                 "featureType": "administrative",
