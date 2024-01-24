@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic HTML Head -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hours - Haukai Restaurant</title>
+    <title>Haukai Restaurant</title>
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="css/styles.css">
-    
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
+    <!-- Header Section -->
     <header class="header">
         <nav>
+            <!-- Logo and Navigation Links -->
             <a href="index.html" class="logo">Haukai.</a>
             <div class="nav-links" id="navLinks">
+                <!-- Close Icon for Mobile Menu -->
                 <i class="fa-solid fa-xmark"></i>
+                <!-- Navigation Menu -->
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="menu.html">Menu</a></li>
@@ -21,16 +29,33 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
+            <!-- Hamburger Menu Icon for Mobile -->
             <i class="fa-solid fa-bars"></i>
         </nav>
-
     </header>
 
-    <main class="main-content">
- 
+    <!-- Main Content Section -->
+    <main class="main-content main-content-hours">
+        <div class="hours-container">
+            <div class="hours">
+                <h2>Hours</h2>
+                <hr>
+                <br>
+                <p>Haukai is open from 5pm<br>Wednesday to Sunday</p>
+
+            </div>
+            <div class="calendar">
+                <h2>Calendar</h2>
+                <hr>
+                <iframe id="googleCalendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Pacific%2FAuckland&showTitle=0&showPrint=0&showTabs=0&showCalendars=0&src=ZW4ubmV3X3plYWxhbmQjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%230B8043"></iframe>
+            </div>
+            
+        </div>
     </main>
 
+    <!-- Footer Section -->
     <footer class="footer">
+        <!-- Newsletter Subscription Form -->
         <div class="footer-column footer-column-1">
             <h3>Newsletter</h3>
             <form name='submit-to-google-sheet'>
@@ -39,20 +64,33 @@
             </form>
             <span id="msg"></span>
         </div>
+        <!-- Contact Information and Social Media Links -->
         <div class="footer-column footer-column-2">
             <h3>Haukai</h3>
             <p>123 Island Street, Kerikeri, Bay of Islands</p>
             <p>Wednesday to Sunday</p>
             <p>5:00pm till late</p>
-                <a href="https://www.facebook.com/Haukai-BOI" aria-label="Visit our Facebook page">
+            <!-- Social Media Icons with ARIA labels for accessibility -->
+            <a href="https://www.facebook.com/Haukai-BOI" aria-label="Visit our Facebook page">
                 <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
-                </a>
-                <a href="https://www.instagram.com/Haukai-BOI" aria-label="Visit our Instagram page">
+            </a>
+            <a href="https://www.instagram.com/Haukai-BOI" aria-label="Visit our Instagram page">
                 <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-                </a>
+            </a>
         </div>
     </footer>
 
+    <!-- External JavaScript Files -->
+    <script>
+        $("#calendar-tool").datepicker({
+        beforeShowDay: function(date) {
+        var day = date.getDay();
+        // Disable Saturday and Sunday
+        return [(day != 1 && day != 2), ''];
+        }
+    });
+
+    </script>
     <script src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/fbfb71d22a.js" crossorigin="anonymous"></script>
 </body>
