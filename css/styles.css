@@ -377,7 +377,7 @@ span {
         border-left: rgba(255, 255, 255, 0.75) solid 1px;
         text-align: center;
         transition: 1s;
-        z-index: 2;
+        z-index: 800;
     }
 
     .nav-links ul {
@@ -436,8 +436,11 @@ span {
         font-size: 20px;
     }
 
-    .contact-container {
-        padding: 50px;
+    .contact-container,
+    .booking-container {
+        padding-left: 50px;
+        padding-right: 50px;
+        flex-direction: column;
     }
 
     .footer {
