@@ -289,11 +289,7 @@ nav {
     margin-bottom: 5px;
 }
 
-.footer i {
-    font-size: 20px;
-    margin-left: 10px;
-    color: #fff;
-}
+
 
 .footer-column-1 {
     text-align: left;
@@ -305,6 +301,19 @@ nav {
 
 .footer a[aria-label*="Visit our"] {
     text-decoration: none;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 48px; /* Set the width and height to 48x48 pixels or larger */
+    height: 48px;
+    padding-top: 10px;
+    text-align: right;
+}
+
+.social-icon i {
+    font-size: 24px;
+    color: #fff;
 }
 
 /* Input and Button Styles */
@@ -479,17 +488,5 @@ span {
 
     form input::placeholder {
         text-align: left;
-    }
-
-    .social-icon {
-        display: inline-block;
-        width: 48px; /* Set the width and height to 48x48 pixels or larger */
-        height: 48px;
-        padding: 10px; /* Add padding to create the tap target */
-        text-align: center;
-    }
-    
-    .social-icon i {
-        font-size: 24px; /* Adjust as needed */
     }
 }
