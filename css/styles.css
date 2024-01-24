@@ -303,6 +303,10 @@ nav {
     text-align: right;
 }
 
+.footer a[aria-label*="Visit our"] {
+    text-decoration: none;
+}
+
 /* Input and Button Styles */
 form input {
     padding: 10px;
@@ -475,5 +479,17 @@ span {
 
     form input::placeholder {
         text-align: left;
+    }
+
+    .social-icon {
+        display: inline-block;
+        width: 48px; /* Set the width and height to 48x48 pixels or larger */
+        height: 48px;
+        padding: 10px; /* Add padding to create the tap target */
+        text-align: center;
+    }
+    
+    .social-icon i {
+        font-size: 24px; /* Adjust as needed */
     }
 }
