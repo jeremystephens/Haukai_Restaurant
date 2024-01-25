@@ -221,26 +221,18 @@ nav {
 }
 
 .text-box h1 {
-    font-size: 148px;
+    font-size: 150px;
     font-weight: 300;
     letter-spacing: 4px;
 }
 
 .text-box h2 {
-    font-size: calc(150px * 0.5);
+    font-size: 75px;
     font-weight: 250;
     letter-spacing: 10px;
     text-align: center;
-}
-
-.text-box p{
-    font-size: 14px;
-    margin: 10px 70px 40px;
-}
-
-.text-box p {
-    text-align: justify;
-    text-align-last: center;
+    margin-top: -60px;
+    margin-bottom: 30px;
 }
 
 .booking-information p,
@@ -451,15 +443,13 @@ span {
     }
 
     .text-box h1 {
-        font-size: 108px;
+        font-size: 84px;
     }
 
     .text-box h2 {
-        font-size: calc(104px * 0.5);
-    }
-
-    .text-box p {
-        font-size: 16px;
+        font-size: 36px;
+        margin-top: -20px;
+        margin-bottom: 20px;
     }
 
     .hero-button {
