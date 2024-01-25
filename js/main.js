@@ -314,4 +314,30 @@ document.addEventListener("DOMContentLoaded", function() {
         showImage(currentIndex);
     }
     
+
+    // Modal functionality for the booking form submission
+    document.querySelector('.booking-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevents the default form submission action
+
+        // Display the modal
+        document.getElementById('myModal').style.display = 'block';
+    });
+
+    // Close modal functionality
+    const closeButton = document.querySelector('.modal .close');
+    closeButton.addEventListener('click', function() {
+        document.getElementById('myModal').style.display = 'none';
+
+        // Reset the form
+        document.querySelector('.booking-form').reset();
+    });
+
+    // Close the modal if the user clicks outside of it
+    window.onclick = function(event) {
+        const modal = document.getElementById('myModal');
+        if (event.target == modal) {
+            modal.style.display = 'none';
+            document.querySelector('.booking-form').reset();
+        }
+    };
 });
