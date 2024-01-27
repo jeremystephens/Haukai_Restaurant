@@ -1,30 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta Information -->
+    <!-- Basic HTML Head -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Page Title -->
-    <title>Contact - Haukai Restaurant</title>
-
-    <!-- External CSS -->
+    <title>Staff Portal - Haukai</title>
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="css/styles.css">
-
-    <!-- Google Maps API Script -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
 </head>
 <body>
     <!-- Header Section -->
     <header class="header">
         <nav>
-            <!-- Logo -->
+            <!-- Logo and Navigation Links -->
             <a href="index.html" class="logo">Haukai.</a>
-            <!-- Navigation Menu -->
             <div class="nav-links" id="navLinks">
+                <!-- Close Icon for Mobile Menu -->
                 <button class="icon-button" aria-label="Close Menu">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
+                <!-- Navigation Menu -->
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="menu.html">Menu</a></li>
@@ -33,46 +28,16 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
+            <!-- Hamburger Menu Icon for Mobile -->
             <button class="icon-button" aria-label="Open Menu">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </nav>
-    </header>  
+    </header>
 
     <!-- Main Content Section -->
-    <main class="main-content main-content-menu">
-        <!-- Menu and Gallery Container -->
-        <div class="menu-container">
-            <!-- Restaurant Menu Section -->
-            <div class="restaurant-menu">
-                <h2>Menu</h2>
-                <hr>
-                <!-- PDF Menu Embed -->
-                <iframe id="menu-pdf" src="menu/Haukai_menu_2024_january.pdf#page=2"></iframe>
-            </div>
+    <main class="main-content main-content-staff">
 
-            <!-- Image Gallery Section -->
-            <div class="gallery">
-                <h2>Gallery</h2>
-                <hr>
-                <!-- Carousel for Images -->
-                <div class="carousel">
-                    <div class="carousel-images">
-                        <!-- Carousel Images -->
-                        <img src="images/flat_bread.webp" alt="Flatbread on a plate" class="carousel-image">
-                        <img src="images/charcoal_bbq.webp" alt="Empty BBQ grill over charcoal, flames bursting above grill" class="carousel-image">
-                        <img src="images/crayfish.webp" alt="BBQ Grilled Spiny Crayfish sliced on a cutting board" class="carousel-image">
-                        <img src="images/fish_chips.webp" alt="Beer battered fish and chips, slice of lemon and tartare sauce" class="carousel-image">
-                        <img src="images/mussels.webp" alt="Bowl of steamed mussels" class="carousel-image">
-                        <img src="images/salad_toss.webp" alt="Closeup shot of salad being tossed with wooden ladles" class="carousel-image">
-                        <img src="images/steak_bbq.webp" alt="Skewers of venison steak grilling over a grill" class="carousel-image">
-                    </div>
-                    <!-- Carousel Navigation Buttons -->
-                    <button class="carousel-button prev"><i class="fa-solid fa-arrow-left"></i></button>
-                    <button class="carousel-button next"><i class="fa-solid fa-arrow-right"></i></button>
-                </div>
-            </div>
-        </div>
     </main>
 
     <!-- Footer Section -->
