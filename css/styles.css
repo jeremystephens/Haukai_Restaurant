@@ -113,6 +113,13 @@ nav {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/kawakawa_image_2.webp');
 }
 
+.main-content-staff {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/kawakawa_image_3.webp');
+}
+
+.main-content-privacy {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/kawakawa_image_3.webp');
+}
 
 /* Carousel */
 .carousel {
@@ -174,7 +181,8 @@ nav {
 .contact-container, 
 .menu-container, 
 .booking-container,
-.hours-container{
+.hours-container,
+.privacy-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -192,12 +200,17 @@ nav {
 .booking-form,
 .booking-information,
 .hours,
-.calendar {
+.calendar,
+.privacy-statement {
     max-width: 600px;
     width: 100%;
     margin-bottom: 20px;
 }
 
+.privacy-section {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
 /* Text Box */
 .text-box {
     padding: 15px;
@@ -210,7 +223,8 @@ nav {
 
 .main-content h2,
 .booking-container h2,
-.hours-container h2 {
+.hours-container h2,
+.privacy-container h2{
     font-size: 30px;
     font-weight: 100;
     letter-spacing: 4px;
@@ -235,9 +249,20 @@ nav {
     margin-bottom: 30px;
 }
 
+.privacy-statement h3 {
+    font-size: 20px;
+    font-weight: 100;
+    text-align: left;    
+}
+
 .booking-information p,
-.hours p {
+.hours p{
     font-size: 14;
+    text-align: left;
+}
+
+.privacy-statement p {
+    font-size: 12px;
     text-align: left;
 }
 
@@ -283,7 +308,10 @@ nav {
 
 .footer-column-1 {
     text-align: left;
-}   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .footer-column-2 {
     text-align: right;
