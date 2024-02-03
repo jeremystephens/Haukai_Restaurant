@@ -222,6 +222,8 @@ function initMap() {
     });
 }
 
+
+
 // Listener for DOMContentLoaded event
 document.addEventListener("DOMContentLoaded", function() {
     // Dynamic behavior for the header on scroll
@@ -313,7 +315,6 @@ document.addEventListener("DOMContentLoaded", function() {
         // Initialize carousel with the first image
         showImage(currentIndex);
     }
-    
 
     // Modal functionality for the booking form submission
     document.querySelector('.booking-form').addEventListener('submit', function(event) {
@@ -340,4 +341,6 @@ document.addEventListener("DOMContentLoaded", function() {
             document.querySelector('.booking-form').reset();
         }
     };
+
+
 });

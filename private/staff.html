@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Basic HTML Head -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Staff Portal - Haukai</title>
-    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/fbfb71d22a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Header Section -->
     <header class="header">
         <nav>
-            <!-- Logo and Navigation Links -->
             <a href="index.html" class="logo">Haukai.</a>
             <div class="nav-links" id="navLinks">
-                <!-- Close Icon for Mobile Menu -->
                 <button class="icon-button" aria-label="Close Menu">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
-                <!-- Navigation Menu -->
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../menu.html">Menu</a></li>
@@ -29,21 +25,31 @@
                     <li><a href="staff.html">Staff</a></li>
                 </ul>
             </div>
-            <!-- Hamburger Menu Icon for Mobile -->
             <button class="icon-button" aria-label="Open Menu">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </nav>
     </header>
 
-    <!-- Main Content Section -->
     <main class="main-content main-content-staff">
-
+        <div class="staff-container">            
+                <h2>Staff Information and Roster</h2>
+                <hr>
+                <br>
+                <p>Use the Tabs inside the embedded document to switch between Staff Information and Roster</p>
+                <br>
+                <div class="spreadsheet-container">
+                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS74V2vX8E6gN_giHPve4tsK7DU0ZQQoXG0-lntLftJ2OwjQzh4Ze7iagfMDNJbutZZsokD59-izWwm/pubhtml"
+                            frameborder="0" 
+                            marginheight="0" 
+                            marginwidth="0">
+                        Loading…
+                    </iframe>
+                </div>
+        </div>
     </main>
 
-    <!-- Footer Section -->
     <footer class="footer">
-        <!-- Newsletter Subscription Form -->
         <div class="footer-column footer-column-1">
             <h3>Newsletter</h3>
             <form name='submit-to-google-sheet'>
@@ -51,31 +57,20 @@
                 <button type="submit">Subscribe</button>
             </form>
             <span id="msg"></span>
-        <a href="../privacy.html" class="privacy-link">Privacy Statement</a>
+            <a href="../privacy.html" class="privacy-link">Privacy Statement</a>
         </div>
-        <!-- Contact Information and Social Media Links -->
         <div class="footer-column footer-column-2">
             <h3>Haukai</h3>
             <p>123 Island Street, Kerikeri, Bay of Islands</p>
             <p>Wednesday to Sunday</p>
             <p>5:00pm till late</p>            
-            <!-- Social Media Icons with ARIA labels for accessibility -->
             <a href="https://www.facebook.com/Haukai-BOI" aria-label="Visit our Facebook page">
-                <span class="social-icon">
-                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
-                </span>
+                <i class="fa-brands fa-facebook-f"></i>
             </a>
-            
             <a href="https://www.instagram.com/Haukai-BOI" aria-label="Visit our Instagram page">
-                <span class="social-icon">
-                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-                </span>
+                <i class="fa-brands fa-instagram"></i>
             </a>
         </div>
     </footer>
-
-    <!-- External JavaScript Files -->
-    <script src="../js/main.js"></script>
-    <script src="https://kit.fontawesome.com/fbfb71d22a.js" crossorigin="anonymous"></script>
 </body>
 </html>

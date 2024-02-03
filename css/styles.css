@@ -114,11 +114,11 @@ nav {
 }
 
 .main-content-staff {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/kawakawa_image_3.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/kawakawa_image_1.webp');
 }
 
 .main-content-privacy {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/kawakawa_image_3.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/kawakawa_image_1.webp');
 }
 
 /* Carousel */
@@ -207,6 +207,23 @@ nav {
     margin-bottom: 20px;
 }
 
+.staff-container {
+    width: 1200px;
+    height: 350px;
+    padding: 20px;
+}
+.spreadsheet-container {
+    width: 100%; /* Takes the full width of its parent */
+    height: 100%;
+    overflow: hidden; /* Hides the overflow content */
+}
+
+.spreadsheet-container iframe {
+    width: 100%; /* iframe takes the full width of its container */
+    height: 100%;
+    border: none; /* Removes the border */
+}
+
 .privacy-section {
     margin-bottom: 20px;
     margin-top: 20px;
@@ -224,7 +241,8 @@ nav {
 .main-content h2,
 .booking-container h2,
 .hours-container h2,
-.privacy-container h2{
+.privacy-container h2,
+.staff-container h2 {
     font-size: 30px;
     font-weight: 100;
     letter-spacing: 4px;
@@ -256,7 +274,8 @@ nav {
 }
 
 .booking-information p,
-.hours p{
+.hours p, 
+.staff-container p {
     font-size: 14;
     text-align: left;
 }
@@ -459,6 +478,12 @@ span {
     cursor: pointer;
 }
 
+@media(max-height:600px) {
+    .staff-container {
+        height: 300px;
+    }
+}
+
 /* Media Queries */
 @media(max-width: 700px) {
     .header {
@@ -538,6 +563,10 @@ span {
         padding-left: 50px;
         padding-right: 50px;
         flex-direction: column;
+    }
+
+    .staff-container {
+        height: 300px;
     }
 
     .footer {
