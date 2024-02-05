@@ -1,3 +1,12 @@
+// Google Analytics code
+(function() {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-LFWC83TPM7');
+})();
+
 // Initializes the Google Map
 function initMap() {
     var location = { lat: -35.21799936266406, lng: 173.96239149713313 };
@@ -222,6 +231,8 @@ function initMap() {
     });
 }
 
+
+
 // Listener for DOMContentLoaded event
 document.addEventListener("DOMContentLoaded", function() {
     // Dynamic behavior for the header on scroll
@@ -313,7 +324,6 @@ document.addEventListener("DOMContentLoaded", function() {
         // Initialize carousel with the first image
         showImage(currentIndex);
     }
-    
 
     // Modal functionality for the booking form submission
     document.querySelector('.booking-form').addEventListener('submit', function(event) {
@@ -340,4 +350,6 @@ document.addEventListener("DOMContentLoaded", function() {
             document.querySelector('.booking-form').reset();
         }
     };
+
+
 });

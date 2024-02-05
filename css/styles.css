@@ -113,6 +113,13 @@ nav {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/kawakawa_image_2.webp');
 }
 
+.main-content-staff {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/kawakawa_image_1.webp');
+}
+
+.main-content-privacy {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/kawakawa_image_1.webp');
+}
 
 /* Carousel */
 .carousel {
@@ -174,7 +181,8 @@ nav {
 .contact-container, 
 .menu-container, 
 .booking-container,
-.hours-container{
+.hours-container,
+.privacy-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -192,12 +200,34 @@ nav {
 .booking-form,
 .booking-information,
 .hours,
-.calendar {
+.calendar,
+.privacy-statement {
     max-width: 600px;
     width: 100%;
     margin-bottom: 20px;
 }
 
+.staff-container {
+    width: 1200px;
+    height: 350px;
+    padding: 20px;
+}
+.spreadsheet-container {
+    width: 100%; /* Takes the full width of its parent */
+    height: 100%;
+    overflow: hidden; /* Hides the overflow content */
+}
+
+.spreadsheet-container iframe {
+    width: 100%; /* iframe takes the full width of its container */
+    height: 100%;
+    border: none; /* Removes the border */
+}
+
+.privacy-section {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
 /* Text Box */
 .text-box {
     padding: 15px;
@@ -210,7 +240,9 @@ nav {
 
 .main-content h2,
 .booking-container h2,
-.hours-container h2 {
+.hours-container h2,
+.privacy-container h2,
+.staff-container h2 {
     font-size: 30px;
     font-weight: 100;
     letter-spacing: 4px;
@@ -235,9 +267,21 @@ nav {
     margin-bottom: 30px;
 }
 
+.privacy-statement h3 {
+    font-size: 20px;
+    font-weight: 100;
+    text-align: left;    
+}
+
 .booking-information p,
-.hours p {
+.hours p, 
+.staff-container p {
     font-size: 14;
+    text-align: left;
+}
+
+.privacy-statement p {
+    font-size: 12px;
     text-align: left;
 }
 
@@ -283,7 +327,10 @@ nav {
 
 .footer-column-1 {
     text-align: left;
-}   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .footer-column-2 {
     text-align: right;
@@ -431,6 +478,12 @@ span {
     cursor: pointer;
 }
 
+@media(max-height:600px) {
+    .staff-container {
+        height: 300px;
+    }
+}
+
 /* Media Queries */
 @media(max-width: 700px) {
     .header {
@@ -510,6 +563,10 @@ span {
         padding-left: 50px;
         padding-right: 50px;
         flex-direction: column;
+    }
+
+    .staff-container {
+        height: 300px;
     }
 
     .footer {

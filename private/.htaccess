@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Staff Portal"
+AuthUserFile "C:/xampp/htdocs/Haukai_Restaurant/password/.htpasswd"
+Require valid-user
